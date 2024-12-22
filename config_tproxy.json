@@ -87,7 +87,7 @@
       { "type": "logical", "mode": "or", "rules": [{ "port": 53 }, { "protocol": "dns" }], "outbound": "dns-out" },
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "source_ip_cidr": "192.168.2.12", "outbound": "🎯 全球直连" },
-      { "ip_cidr": "10.0.0.1/8", "172.16.0.0/12", "192.168.0.0/16", "outbound": "🎯 全球直连" },
+      { "ip_cidr": [ "10.0.0.1/8", "172.16.0.0/12", "192.168.0.0/16"], "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one", "v4.plex.tv"], "outbound": "🎯 全球直连" },
       { "domain_suffix": "zzjnb.fun", "outbound": "🎯 全球直连" },
